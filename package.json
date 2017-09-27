@@ -5,10 +5,13 @@
   "main": "server/server.js",
   "scripts": {
     "start": "node server/server.js",
-    "test": "mocha **/tests/*.test.js",
+    "test": "export NODE_ENV=test mocha **/tests/*.test.js",
     "test-watch": "nodemon --exec \"npm test\""
 
   },
+  "engines": {
+      "node": "8.4.0"
+    },
   "author": "SZ",
   "license": "ISC",
   "dependencies": {
