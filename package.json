@@ -4,9 +4,10 @@
   "description": "",
   "main": "server/server.js",
   "scripts": {
+    "start": "node server/server.js",
     "test": "mocha **/tests/*.test.js",
-    "test-watch": "nodemon --exec \"npm test\"",
-    "start" : "node server/server.js"
+    "test-watch": "nodemon --exec \"npm test\""
+
   },
   "author": "SZ",
   "license": "ISC",
